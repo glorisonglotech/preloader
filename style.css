@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background:linear-gradient(rgba(0,0,0,0.5),rgb(87, 99, 99)), url("images/download.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 1%;
+}
+.content{
+    position: absolute;
+    color: white;
+    top:40%;
+    left: 20%;
+}
+.content h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 80px;
+}
+.content p{
+    font-size: 20px;
+    font-style: italic;
+}
+.content-btn{
+   margin-top:20% ;
+}
+.content-btn a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.content-btn span{
+    position: absolute;
+    background:cyan;
+    height: 100%;
+    width: 0%;
+    left: 0;
+    top: 0;
+    border-radius: 8px;
+    z-index: -1;
+}
+.content-btn a:hover span{
+    width: 100%;
+    transition: 0.5s;
+}
+.content-btn a:hover{
+    color: black;
+}
+#loader{
+    background: black url("images/Preloader.gif") no-repeat center center;
+    background-size: 7%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.car{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    animation: car 5s infinite;
+}
+@keyframes car{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
